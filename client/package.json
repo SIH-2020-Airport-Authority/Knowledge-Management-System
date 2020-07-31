@@ -4,6 +4,7 @@
   "private": true,
   "author": "MSA",
   "dependencies": {
+    "antd": "^4.5.1",
     "axios": "^0.19.2",
     "babel-polyfill": "6.26.0",
     "babel-preset-env": "1.7.0",
@@ -24,6 +25,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.1",
     "react-spring": "^8.0.20",
+    "reactstrap": "^8.5.1",
     "truffle": "^5.1.35",
     "web3": "1.0.0-beta.55"
   },
