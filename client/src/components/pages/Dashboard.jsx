@@ -1,26 +1,24 @@
 import {
-
-  AppstoreOutlined,
-  FolderOpenOutlined,
-  LogoutOutlined,
-  SearchOutlined,
-  UserSwitchOutlined,
+	AppstoreOutlined,
+	FolderOpenOutlined,
+	LogoutOutlined,
+	SearchOutlined,
+	UserSwitchOutlined
 } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
+import { Layout, Menu, Descriptions } from "antd";
 import axios from "axios";
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import Web3 from "web3";
-import Navbar from "./Navbar";
 import SocialNetwork from "../../abis/SocialNetwork.json";
 import "../../styles/App.scss";
-
+import "../../styles/Dashboard.css";
+import LoaderPage from '../redirect/LoaderPage';
 import AD from "./AD";
 import AI from "./AI";
 import DGCA from "./DGCA";
 import DoAS from "./DoAS";
 import MoCA from "./MoCA";
-import LoaderPage from '../redirect/LoaderPage'
 
 
 
@@ -343,13 +341,8 @@ class Dashboard extends React.Component {
 									</Menu.Item>
 									<span>Home Page</span>
 								</Menu.Item>
+								
 								<Menu.Item key="3">
-									<Link to="/aerodromeLicense">
-										<FolderOpenOutlined />
-										<span>Generate Certificate</span>
-									</Link>
-								</Menu.Item>
-								<Menu.Item key="5">
 									<Link to="/auth">
 										<LogoutOutlined />
 										<span>Logout</span>
@@ -410,13 +403,8 @@ class Dashboard extends React.Component {
 											<span>Projects</span>
 										</Link>
 									</Menu.Item>
+									
 									<Menu.Item key="4">
-										<Link to="/">
-											<UserSwitchOutlined />
-											<span>Manage Users</span>
-										</Link>
-									</Menu.Item>
-									<Menu.Item key="5">
 										<Link to="/auth">
 											<LogoutOutlined />
 											<span>Logout</span>
@@ -472,13 +460,13 @@ class Dashboard extends React.Component {
 											<span>Home Page</span>
 										</Menu.Item>
 										<Menu.Item key="3">
-											<Link to="/">
+											<Link to="/project">
 												<FolderOpenOutlined />
 												<span>Projects</span>
 											</Link>
 										</Menu.Item>
 										<Menu.Item key="4">
-											<Link to="/">
+											<Link to="/useradmin">
 												<UserSwitchOutlined />
 												<span>Manage Users</span>
 											</Link>
@@ -538,19 +526,8 @@ class Dashboard extends React.Component {
 												<AppstoreOutlined />
 												<span>Home Page</span>
 											</Menu.Item>
+											
 											<Menu.Item key="3">
-												<Link to="/">
-													<FolderOpenOutlined />
-													<span>Projects</span>
-												</Link>
-											</Menu.Item>
-											<Menu.Item key="4">
-												<Link to="/">
-													<UserSwitchOutlined />
-													<span>Manage Users</span>
-												</Link>
-											</Menu.Item>
-											<Menu.Item key="5">
 												<Link to="/auth">
 													<LogoutOutlined />
 													<span>Logout</span>
